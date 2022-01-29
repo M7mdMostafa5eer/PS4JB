@@ -55,7 +55,13 @@
 		<script src="webkit.js"></script>
 		<script src="payloads.js"></script>
 	</head>
-	<body class="bg">
+	<body class="bg" 
+	      style="
+		     margin-left: 0px;
+		     margin-right: 0px;
+		     margin-top: 0px;
+		     margin-bottom: 0px;
+		     ">
 		<script>
 			window.onload = function(e){if(sessionStorage.Queue==null){sessionStorage.Queue="";}else if(sessionStorage.Queue!=""){executependingqueue(sessionStorage.Queue);}};
 			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Page Caching Started!!"};
